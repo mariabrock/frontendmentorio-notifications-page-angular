@@ -1,0 +1,27 @@
+:host {
+  --blue: oklch(33.99% 0.132 261.51);
+  --very-dark-blue: oklch(24.54% 0.022 269.18);
+  --red: oklch(66.52% 0.199 25.19);
+  //--white: oklch(100% 0 0);
+  //--black: oklch(0% 0 0);
+
+  --very-light-grayish-blue: oklch(98.34% 0.005 247.88);
+  --light-grayish-blue-1: oklch(94.88% 0.018 249.82);
+  --light-grayish-blue-2: oklch(92.23% 0.014 238.58);
+  --grayish-blue: oklch(69.32% 0.027 262.94);
+  --dark-grayish-blue: oklch(51.31% 0.029 262.86);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  height: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  background-color: var(--dark-slate-grey);
+}
