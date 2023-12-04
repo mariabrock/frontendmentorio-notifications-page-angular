@@ -1,5 +1,6 @@
 :host {
   --blue: oklch(33.99% 0.132 261.51);
+  --attribution-blue: oklch(46.57% 0.132 270.05);
   --very-dark-blue: oklch(24.54% 0.022 269.18);
   --red: oklch(66.52% 0.199 25.19);
   //--white: oklch(100% 0 0);
@@ -16,12 +17,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html, body {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--light-grayish-blue-1);
   height: 100%;
   min-height: 100vh;
-  font-size: 16px;
-  background-color: var(--dark-slate-grey);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--attribution-blue);
 }
