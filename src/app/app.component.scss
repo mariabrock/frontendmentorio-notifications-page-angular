@@ -1,6 +1,7 @@
 :host {
   --blue: oklch(33.99% 0.132 261.51);
-  --very-dark-blue: oklch(24.54% 0.022 269.18);
+  --attribution-blue: oklch(46.57% 0.132 270.05);
+  --very-dark-blue: oklch(24.54% 0.1616 269.18);
   --red: oklch(66.52% 0.199 25.19);
   //--white: oklch(100% 0 0);
   //--black: oklch(0% 0 0);
@@ -12,16 +13,21 @@
   --dark-grayish-blue: oklch(51.31% 0.029 262.86);
 }
 
-* {
+.container {
+  background-color: var(--light-grayish-blue-1);
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-html, body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  height: 100%;
-  min-height: 100vh;
-  font-size: 16px;
-  background-color: var(--dark-slate-grey);
+.panel {
+  background-color: white;
+  min-height: 50vh;
+  min-width: 50vw;
+  border-radius: 20px;
+  margin: 5rem 15rem;
+  padding: 2rem;
 }

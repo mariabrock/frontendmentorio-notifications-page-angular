@@ -1,0 +1,73 @@
+.notif {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--grayish-blue);
+  display: flex;
+  flex-direction: row;
+}
+
+.old {
+  background-color: var(white);
+}
+
+.new {
+  background-color: var(--light-grayish-blue-1);
+}
+
+.with-circle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image {
+  margin: .5rem;
+  padding: .5rem;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+p {
+  color: var(--dark-grayish-blue);
+}
+
+.event, .name {
+  font-weight: bold;
+}
+
+.name {
+  color: black;
+}
+
+.post {
+  color: var(--dark-grayish-blue);
+}
+
+.club {
+  color: var(--very-dark-blue);
+}
+
+.sub-notif {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--light-grayish-blue-2);
+  margin: 1rem 5rem;
+}
+
+.footer {
+  color: var(--grayish-blue);
+}
+
+.chess {
+  padding: 1rem;
+  margin-left: 20rem;
+}
+
+.fa-circle {
+  color: var(--red);
+  padding: 1rem;
+}

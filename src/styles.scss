@@ -35,5 +35,41 @@ $notifications-page-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%; font-size: 16px; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:host {
+  --blue: oklch(33.99% 0.132 261.51);
+  --attribution-blue: oklch(46.57% 0.132 270.05);
+  --very-dark-blue: oklch(24.54% 0.022 269.18);
+  --red: oklch(66.52% 0.199 25.19);
+  //--white: oklch(100% 0 0);
+  //--black: oklch(0% 0 0);
+
+  --very-light-grayish-blue: oklch(98.34% 0.005 247.88);
+  --light-grayish-blue-1: oklch(94.88% 0.018 249.82);
+  --light-grayish-blue-2: oklch(92.23% 0.014 238.58);
+  --grayish-blue: oklch(69.32% 0.027 262.94);
+  --dark-grayish-blue: oklch(51.31% 0.029 262.86);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--dark-grayish-blue);
+}
+
+a:visited {
+  color: var(--very-dark-blue);
+}
+
+a:hover {
+  color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
+a:active {
+  color: var(--dark-grayish-blue);
+}
