@@ -1,3 +1,8 @@
+p {
+  color: var(--dark-grayish-blue);
+  margin: .5rem;
+}
+
 .notif {
   margin: 1rem;
   padding: 1rem;
@@ -5,14 +10,24 @@
   color: var(--grayish-blue);
   display: flex;
   flex-direction: row;
+
+  .old {
+    background-color: var(white);
+  }
+
+  .new {
+    background-color: var(--light-grayish-blue-1);
+  }
+
+  .footer {
+    color: var(--grayish-blue);
+    margin: 0 .5rem;
+  }
 }
 
-.old {
-  background-color: var(white);
-}
-
-.new {
-  background-color: var(--light-grayish-blue-1);
+.fa-circle {
+  color: var(--red);
+  padding: 1rem;
 }
 
 .with-circle {
@@ -29,10 +44,6 @@
 img {
   height: 50px;
   width: 50px;
-}
-
-p {
-  color: var(--dark-grayish-blue);
 }
 
 .event, .name {
@@ -58,16 +69,19 @@ p {
   margin: 1rem 5rem;
 }
 
-.footer {
-  color: var(--grayish-blue);
+.you-pic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .chess {
   padding: 1rem;
-  margin-left: 20rem;
+  margin-left: 25rem;
 }
 
-.fa-circle {
-  color: var(--red);
-  padding: 1rem;
+@media(max-width: 375px) {
+  .chess {
+    margin-left: 0;
+  }
 }
