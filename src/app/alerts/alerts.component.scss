@@ -15,8 +15,20 @@
   background-color: var(--light-grayish-blue-1);
 }
 
+.with-circle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image {
+  margin: .5rem;
+  padding: .5rem;
+}
+
 img {
-  height: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 p {
@@ -43,14 +55,19 @@ p {
   padding: 1rem;
   border-radius: 10px;
   background-color: var(--light-grayish-blue-2);
-  margin: 1rem 0;
+  margin: 1rem 5rem;
 }
 
 .footer {
   color: var(--grayish-blue);
 }
 
-.message {
-  display: flex;
-  flex-direction: column;
+.chess {
+  padding: 1rem;
+  margin-left: 20rem;
+}
+
+.fa-circle {
+  color: var(--red);
+  padding: 1rem;
 }

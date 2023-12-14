@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  public isRead = false;
+
+  public handleClick() {
+    this.isRead = !this.isRead;
+    console.log(this.isRead)
+  };
 
 }
