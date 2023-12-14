@@ -1,0 +1,56 @@
+.notif {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--grayish-blue);
+  display: flex;
+  flex-direction: row;
+}
+
+.old {
+  background-color: var(white);
+}
+
+.new {
+  background-color: var(--light-grayish-blue-1);
+}
+
+img {
+  height: 100px;
+}
+
+p {
+  color: var(--dark-grayish-blue);
+}
+
+.event, .name {
+  font-weight: bold;
+}
+
+.name {
+  color: black;
+}
+
+.post {
+  color: var(--dark-grayish-blue);
+}
+
+.club {
+  color: var(--very-dark-blue);
+}
+
+.sub-notif {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--light-grayish-blue-2);
+  margin: 1rem 0;
+}
+
+.footer {
+  color: var(--grayish-blue);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
