@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./header/header.component";
 import { AlertsComponent } from "./alerts/alerts.component";
 import { FooterComponent } from "./footer/footer.component";
+import EventEmitter from "events";
 
 @Component({
   selector: 'app-root',
@@ -14,4 +15,9 @@ import { FooterComponent } from "./footer/footer.component";
 })
 export class AppComponent {
   title = 'notifications-page';
+  @Input() readEvent = new EventEmitter();
+
+  receiveBool($event: boolean) {
+    this.readEvent = $event
+  }
 }

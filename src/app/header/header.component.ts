@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ClearMessageService } from "../services/clear-message.service";
 
 @Component({
   selector: 'app-header',
@@ -8,11 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  public isRead = false;
+  private messageService?: ClearMessageService;
 
-  public handleClick() {
-    this.isRead = !this.isRead;
-    console.log(this.isRead)
-  };
+  constructor() {
+    this.messageService = inject(ClearMessageService);
+  }
 
 }

@@ -1,3 +1,4 @@
+
 p {
   color: var(--dark-grayish-blue);
   margin: .5rem;
@@ -10,19 +11,19 @@ p {
   color: var(--grayish-blue);
   display: flex;
   flex-direction: row;
+}
 
-  .old {
-    background-color: var(white);
-  }
+.old {
+  background-color: var(--white);
+}
 
-  .new {
-    background-color: var(--light-grayish-blue-1);
-  }
+.new {
+  background-color: var(--light-grayish-blue-1);
+}
 
-  .footer {
-    color: var(--grayish-blue);
-    margin: 0 .5rem;
-  }
+.footer {
+  color: var(--grayish-blue);
+  margin: 0 .5rem;
 }
 
 .fa-circle {
