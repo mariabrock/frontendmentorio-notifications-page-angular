@@ -1,5 +1,4 @@
 import { Injectable, Output } from '@angular/core';
-import EventEmitter from "events";
 import { BehaviorSubject } from "rxjs";
 
 @Injectable({
@@ -7,16 +6,17 @@ import { BehaviorSubject } from "rxjs";
 })
 export class ClearMessageService {
   private boolSource = new BehaviorSubject<boolean>(false);
-  currentBool = this.boolSource.asObservable();
+  currentBool$ = this.boolSource.asObservable();
 
-  public isRead = false;
 
-  constructor() { }
-
-  emitBool() {
-    this.isRead = !this.isRead;
-    this.readEvent.emit(this.isRead.toString());
-    console.log(this.isRead);
+  constructor() {
+    this.currentBool$.subscribe();
   }
+
+  emitBoolean(bool: boolean) {
+    this.boolSource.next(bool);
+    console.log('bool:', bool);
+  }
+
 
 }

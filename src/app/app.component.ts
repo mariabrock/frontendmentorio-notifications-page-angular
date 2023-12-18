@@ -18,6 +18,6 @@ export class AppComponent {
   @Input() readEvent = new EventEmitter();
 
   receiveBool($event: boolean) {
-    this.readEvent = $event
+    // this.readEvent = $event
   }
 }

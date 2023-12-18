@@ -1,6 +1,6 @@
-import { Component, inject, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ClearMessageService } from "../services/clear-message.service";
-import EventEmitter from "events";
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-header',
@@ -9,20 +9,22 @@ import EventEmitter from "events";
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
-  @Output() readEvent = new EventEmitter();
+export class HeaderComponent implements OnInit {
+  public bool?:boolean;
 
-  private messageService?: ClearMessageService;
-  public isRead = false;
+  public isRead: Observable<boolean> = this.messageService.currentBool$;
 
-  constructor() {
-    this.messageService = inject(ClearMessageService);
-  }
+  constructor(private messageService: ClearMessageService) {}
 
-  emitBool() {
-    this.isRead = !this.isRead;
-    this.readEvent.emit(this.isRead.toString());
+  ngOnInit() {
+    this.isRead.subscribe(bool => this.bool = bool)
     console.log(this.isRead);
   }
+
+  markAsRead() {
+
+    console.log(this.isRead);
+  }
+
 
 }
