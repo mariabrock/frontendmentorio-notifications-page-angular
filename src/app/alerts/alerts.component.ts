@@ -14,7 +14,9 @@ import { NgClass } from "@angular/common";
 export class AlertsComponent {
   public messageService = inject(ClearMessageService);
   test = this.messageService._isRead()
-  className = 'new'
+  notifBackground = 'new'
+  iconDisplay = 'show'
+
 
   constructor() {
     console.log(this.test)
@@ -22,7 +24,8 @@ export class AlertsComponent {
 
   markAsRead($event: any) {
     this.messageService.set();
-    return this.className = 'old'
+    this.notifBackground = 'old';
+    this.iconDisplay = 'hidden';
   }
 
 }

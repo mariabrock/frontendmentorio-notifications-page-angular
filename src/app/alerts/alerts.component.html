@@ -7,38 +7,38 @@
   <p class="mark-read" (click)="markAsRead($event)">Mark all as read</p>
 </div>
 
-<div class="notif" [ngClass]="className">
+<div class="notif" [ngClass]="notifBackground">
   <div class="image">
     <img src="assets/images/avatar-mark-webber.png" alt="">
   </div>
   <div>
     <div class="with-circle">
-      <p><span class="name">Mark Webber</span> reacted to your recent post <span class="event post">My first tournament today!</span></p><span class="hidden"><i class="fa-solid fa-circle fa-xs"></i></span>
+      <p><span class="name">Mark Webber</span> reacted to your recent post <span class="event post">My first tournament today!</span></p><span [ngClass]="iconDisplay"><i class="fa-solid fa-circle fa-xs"></i></span>
     </div>
       <p class="footer">1m ago</p>
   </div>
 </div>
 
-<div class="notif" [ngClass]="className">
+<div class="notif" [ngClass]="notifBackground">
   <div class="image">
     <img src="assets/images/avatar-angela-gray.png" alt="">
   </div>
   <div>
     <div class="with-circle">
-      <p><span class="name">Angela Gray</span> followed you</p><span class="hidden"><i class="fa-solid fa-circle fa-xs"></i></span>
+      <p><span class="name">Angela Gray</span> followed you</p><span [ngClass]="iconDisplay"><i class="fa-solid fa-circle fa-xs"></i></span>
     </div>
       <p class="footer">5m ago</p>
   </div>
 
 </div>
 
-<div class="notif" [ngClass]="className">
+<div class="notif" [ngClass]="notifBackground">
   <div class="image">
     <img src="assets/images/avatar-jacob-thompson.png" alt="">
   </div>
   <div>
     <div class="with-circle">
-      <p><span class="name">Jacob Thompson</span> has joined your group <span class="event club">Chess Club</span></p><span class="hidden"><i class="fa-solid fa-circle fa-xs"></i></span>
+      <p><span class="name">Jacob Thompson</span> has joined your group <span class="event club">Chess Club</span></p><span [ngClass]="iconDisplay"><i class="fa-solid fa-circle fa-xs"></i></span>
     </div>
       <p class="footer">1 day ago</p>
   </div>

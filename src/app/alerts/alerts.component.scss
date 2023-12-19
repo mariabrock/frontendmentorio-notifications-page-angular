@@ -117,6 +117,14 @@ h3 {
   color: var(--dark-grayish-blue);
 }
 
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 @media(max-width: 375px) {
   .chess {
     margin-left: 0;
