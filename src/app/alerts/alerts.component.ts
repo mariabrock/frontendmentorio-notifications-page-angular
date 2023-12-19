@@ -1,19 +1,28 @@
 import { Component, inject, Input } from '@angular/core';
 import { ClearMessageService } from "../services/clear-message.service";
+import { NgClass } from "@angular/common";
 
 @Component({
   selector: 'app-alerts',
   standalone: true,
   templateUrl: './alerts.component.html',
+  imports: [
+    NgClass
+  ],
   styleUrl: './alerts.component.scss'
 })
 export class AlertsComponent {
-// @Input('read') isRead: boolean;
-  private messageService?: ClearMessageService;
+  public messageService = inject(ClearMessageService);
+  test = this.messageService._isRead()
+  className = 'new'
 
   constructor() {
-    this.messageService = inject(ClearMessageService);
+    console.log(this.test)
   }
 
+  markAsRead($event: any) {
+    this.messageService.set();
+    return this.className = 'old'
+  }
 
 }

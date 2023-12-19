@@ -1,22 +1,18 @@
-import { Injectable, Output } from '@angular/core';
-import { BehaviorSubject } from "rxjs";
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClearMessageService {
-  private boolSource = new BehaviorSubject<boolean>(false);
-  currentBool$ = this.boolSource.asObservable();
+  public  _isRead = signal(false);
 
 
   constructor() {
-    this.currentBool$.subscribe();
   }
 
-  emitBoolean(bool: boolean) {
-    this.boolSource.next(bool);
-    console.log('bool:', bool);
+  set(): boolean {
+    console.log(!this._isRead() ? true: false);
+    return!this._isRead() ? true: false;
   }
-
 
 }

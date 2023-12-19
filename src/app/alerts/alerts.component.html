@@ -1,6 +1,13 @@
 
-<div class="notif new">
-  <!--     [ngClass]="{backgroundColor: isRead !== ? 'var(--light-grayish-blue-1)' : 'var(--white)'}"-->
+<div class="header">
+  <div class="notifications">
+    <h3 class="title">Notifications</h3> <div class="number"><h3>3</h3></div>
+  </div>
+
+  <p class="mark-read" (click)="markAsRead($event)">Mark all as read</p>
+</div>
+
+<div class="notif" [ngClass]="className">
   <div class="image">
     <img src="assets/images/avatar-mark-webber.png" alt="">
   </div>
@@ -12,7 +19,7 @@
   </div>
 </div>
 
-<div class="notif new">
+<div class="notif" [ngClass]="className">
   <div class="image">
     <img src="assets/images/avatar-angela-gray.png" alt="">
   </div>
@@ -25,7 +32,7 @@
 
 </div>
 
-<div class="notif new">
+<div class="notif" [ngClass]="className">
   <div class="image">
     <img src="assets/images/avatar-jacob-thompson.png" alt="">
   </div>
