@@ -13,6 +13,15 @@ p {
   flex-direction: row;
 }
 
+.mark-read {
+  color: var(--dark-grayish-blue);
+}
+
+.mark-read:hover {
+  color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
 .old {
   background-color: var(--white);
 }
@@ -55,19 +64,38 @@ img {
   color: black;
 }
 
+.name:hover {
+  color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
 .post {
   color: var(--dark-grayish-blue);
+}
+
+.post:hover {
+  color: var(--very-dark-blue);
+  cursor: pointer;
 }
 
 .club {
   color: var(--very-dark-blue);
 }
 
+.club:hover {
+  cursor: pointer;
+}
+
 .sub-notif {
   padding: 1rem;
   border-radius: 10px;
-  background-color: var(--light-grayish-blue-2);
+  border: 1px solid var(--light-grayish-blue-2);
   margin: 1rem 5rem;
+}
+
+.sub-notif:hover {
+  background-color: var(--light-grayish-blue-2);
+  cursor: pointer;
 }
 
 .you-pic {
@@ -79,6 +107,10 @@ img {
 .chess {
   padding: 1rem;
   margin-left: 25rem;
+}
+
+.chess:hover {
+  cursor: pointer;
 }
 
 .header {
