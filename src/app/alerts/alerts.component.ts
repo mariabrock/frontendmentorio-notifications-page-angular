@@ -13,9 +13,13 @@ import { NgClass } from "@angular/common";
 })
 export class AlertsComponent {
   public messageService = inject(ClearMessageService);
-  test = this.messageService._isRead()
-  notifBackground = 'new'
-  iconDisplay = 'show'
+  test = this.messageService._isRead();
+  notifBackground = 'new';
+  iconDisplay = 'show';
+  notifNumber = 'blue';
+
+  number= '3';
+
 
 
   constructor() {
@@ -26,6 +30,9 @@ export class AlertsComponent {
     this.messageService.set();
     this.notifBackground = 'old';
     this.iconDisplay = 'hidden';
+    this.number = '0';
+    this.notifNumber = 'white';
+
   }
 
 }
