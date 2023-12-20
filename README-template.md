@@ -4,6 +4,7 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 
 ## Table of contents
 
+- [Dev Server](#development-server)
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
@@ -16,7 +17,12 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Overview
 
