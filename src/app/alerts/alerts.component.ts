@@ -1,4 +1,4 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ClearMessageService } from "../services/clear-message.service";
 import { NgClass } from "@angular/common";
 import { RouterLink } from "@angular/router";
@@ -19,23 +19,19 @@ export class AlertsComponent {
   notifBackground = 'new';
   iconDisplay = 'show';
   notifNumber = 'blue';
-
   number= '3';
-
-
 
   constructor() {
     console.log(this.test)
   }
 
   markAsRead($event: any) {
-    console.log('clicked')
-    this.messageService.set();
+    console.log('clicked', $event)
+    this.messageService.setBoolean();
     this.notifBackground = 'old';
     this.iconDisplay = 'hidden';
     this.number = '0';
     this.notifNumber = 'white';
-
   }
 
 }
