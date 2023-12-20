@@ -35,14 +35,20 @@ $notifications-page-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body {
-  height: 100%; font-size: 16px;
-}
-
-body {
+* {
   margin: 0;
   padding: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: var(--light-grayish-blue-1);
   box-sizing: border-box;
 }
+
+html, body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+//@media(max-width: 400px) {
+//  html, body {
+//
+//  }
+//}

@@ -164,8 +164,14 @@ h3 {
   display: none;
 }
 
-@media(max-width: 375px) {
+@media(max-width: 400px) {
   .chess {
     margin-left: 0;
+  }
+
+  .sub-notif {
+    padding: 1rem;
+    margin-left: 5rem;
+    margin-right: 1rem;
   }
 }

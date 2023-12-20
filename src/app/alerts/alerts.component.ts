@@ -29,6 +29,7 @@ export class AlertsComponent {
   }
 
   markAsRead($event: any) {
+    console.log('clicked')
     this.messageService.set();
     this.notifBackground = 'old';
     this.iconDisplay = 'hidden';
