@@ -46,24 +46,3 @@ body {
   background-color: var(--light-grayish-blue-1);
   box-sizing: border-box;
 }
-
-a {
-  text-decoration: none;
-}
-
-a:link {
-  color: var(--dark-grayish-blue);
-}
-
-a:visited {
-  color: var(--very-dark-blue);
-}
-
-a:hover {
-  color: var(--very-dark-blue);
-  cursor: pointer;
-}
-
-a:active {
-  color: var(--dark-grayish-blue);
-}
