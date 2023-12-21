@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/mariabrock/frontendmentorio-notifications-page-angular)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Live Site URL: [Github Pages](https://mariabrock.github.io/frontendmentorio-notifications-page-angular/)
 
 ## My process
 
