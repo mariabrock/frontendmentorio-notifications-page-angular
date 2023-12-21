@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/mariabrock/frontendmentorio-notifications-page-angular)
-- Live Site URL: [Vercel]([https://mariabrock.github.io/frontendmentorio-notifications-page-angular/](https://frontendmentorio-notifications-page-angular.vercel.app/))
+- Live Site URL: [Vercel](https://mariabrock.github.io/frontendmentorio-notifications-page-angular/](https://frontendmentorio-notifications-page-angular.vercel.app/))
 
 ## My process
 
